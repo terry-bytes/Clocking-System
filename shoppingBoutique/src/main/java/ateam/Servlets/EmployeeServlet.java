@@ -158,7 +158,7 @@ public class EmployeeServlet extends HttpServlet {
                     + "Best regards,\n"
                     + "VMC MEDIA";
 
-            Email emailDetails = new Email("vmcplanettv40@gmail.com", "bdhj gmli rvfh nbwp");
+            Email emailDetails = new Email("your email", "your password");
             emailDetails.setReceiver(email);
             emailDetails.setSubject(subject);
             emailDetails.setMessage(message);
@@ -169,7 +169,7 @@ public class EmployeeServlet extends HttpServlet {
 
            
             String otp = generateOTP();
-            Email otpEmailDetails = new Email("vmcplanettv40@gmail.com", "bdhj gmli rvfh nbwp");
+            Email otpEmailDetails = new Email("your email", "your password");
             otpEmailDetails.setReceiver(email);
             otpEmailDetails.setSubject("Email Verification OTP");
             otpEmailDetails.setMessage("Your OTP for email verification is: " + otp);
@@ -290,7 +290,7 @@ public class EmployeeServlet extends HttpServlet {
         String email = request.getParameter("email");
         String otp = generateOTP();
 
-        Email emailDetails = new Email("vmcplanettv40@gmail.com", "bdhj gmli rvfh nbwp");
+        Email emailDetails = new Email("your email", "your password");
         emailDetails.setReceiver(email);
         emailDetails.setSubject("Password Reset OTP");
         emailDetails.setMessage("Your OTP for password reset is: " + otp);

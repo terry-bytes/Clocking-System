@@ -16,7 +16,7 @@ public class EmailServiceImpl implements EmailService {
     }
 
     public EmailServiceImpl() {
-        this.email = new Email("vmcplanettv40@gmail.com", "bdhj gmli rvfh nbwp");
+        this.email = new Email("your email", "your password");
     }
 
     @Override
@@ -65,8 +65,8 @@ public class EmailServiceImpl implements EmailService {
 
     @Override
     public void sendPasswordResetMail(String email, String otp) {
-        final String from = "vmcplanettv40@gmail.com";
-        final String password = "bdhj gmli rvfh nbwp";
+        final String from = "your email";
+        final String password = "your password";
 
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
